@@ -18,60 +18,100 @@
 <script>
 function StationOne()
 {
-    var myarray= new Array("You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY where you are!",
-                           "You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY where you are!",
-                           "An updraft carries you higher into the atmosphere where you become cooler and CONDENSE into a cloud. Go to the Clouds",
-                           "The air around you cools and you CONDENSE into a cloud. Go to the Clouds",
-                           "Clear skies and a cool night caused you to change from a gas (water vapor) to a liquid (water) and you appear as dew on grass. Go to the Ground",
-                           "Clear skies and a cold night caused you to change from a gas (water vapor) to a solid (ice crystal) and you appear as frost on grass. The process is called DEPOSITION. Go to the Ground");
+    var myarray= new Array("You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY at Station 1 - Atmosphere.",
+                           "You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY at Station 1 - Atmosphere.",
+                           "An updraft carries you higher into the atmosphere where you become cooler and CONDENSE into a cloud. Go to Station 2 - Clouds",
+                           "The air around you cools and you CONDENSE into a cloud. Go to Station 2 - Clouds",
+                           "Clear skies and a cool night caused you to change from a gas (water vapor) to a liquid (water) and you appear as dew on grass. Go to Station 8 - Ground",
+                           "Clear skies and a cold night caused you to change from a gas (water vapor) to a solid (ice crystal) and you appear as frost on grass. The process is called DEPOSITION. Go to Station 8 - Ground");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationTwo()
 {
-    var myarray= new Array("Go to Metamorphic Rock", "Go to Metamorphic Rock", "Go to Metamorphic Rock", "Stay under High Temperature and Pressure at this station", "Stay under High Temperature and Pressure at this station", "Stay under High Temperature and Pressure at this station");
+    var myarray= new Array("As a cloud, you are constantly changing shape but otherwise you continue to float in the atmosphere. STAY where you are! Station 2 - Clouds.",
+                           "You move into an area where the air is drier. You EVAPORATE as you change from a liquid (water droplet) to a gas (water vapor). Go to Station 1 - Atmosphere.",
+                           "CLOUDS You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over the ocean. Go to Station 6 - Oceans.",
+                           "You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over land. Too much rain fell so you RUNOFF into a river. Go to Station 5 - Rivers & Lakes.",
+                           "You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over land and INFILTRATE into the ground. Go to Station 8 - Ground.",
+                           "You freeze into an ice crystal and combine with other ice crystals to form a snowflake. As the snowflake grows it becomes too heavy to be supported by the rising air and you fall to the earth. Go to Station3 - Snow.");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationThree()
 {
-    var myarray= new Array("Go to Compaction and Cementation", "Go to Compaction and Cementation", "Continue as Sediment at this station", "Continue as Sediment at this station", "Continue as Sediment at this station", "Continue as Sediment at this station");
+    var myarray= new Array("",
+                           "",
+                           "",
+                           "",
+                           "",
+                           "");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFour()
 {
-    var myarray= new Array("Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to High Temperature and Pressure", "Go to High Temperature and Pressure", "Go to Melting", "Go to Melting");
+     var myarray= new Array("You INFILTRATE into the ground making it moist. Go to Station 8 - Ground.",
+                           "You break off (calve) from the glacier and become an iceberg in the ocean. You melt. Go to Station 6 - Ocean.",
+                           "You change from a solid (ice) to a gas (water vapor) through the process of SUBLIMATION. Go to Station 1 - Atmosphere.",
+                           "You melt and PERCOLATE into the underground water. Go to Station 7 - Aquifer",
+                           "You remain locked in ice in the glacier. STAY at Station 4 - Glaciers",
+                           "You melt and become RUNOFF. Go to Station 5 - Lakes & Rivers");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFive()
 {
-    var myarray= new Array("Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to Weathering and Erosion", "Go to Weathering and Erosion", "Continue Exposure at the Surface at this station", "Continue Exposure at the Surface at this station");
+        var myarray= new Array("",
+                           "",
+                           "",
+                           "",
+                           "",
+                           "");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationSix()
 {
-    var myarray= new Array("Go to Melting", "Go to Melting", "Go to Exposure at the Surface", "Go to Exposure at the Surface", "Go to High Temperature and Pressure", "Go to High Temperature and Pressure");
+        var myarray= new Array("",
+                           "",
+                           "",
+                           "",
+                           "",
+                           "");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationSeven()
 {
-    var myarray= new Array("You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "After a long time you seep into the ocean. Go to the Oceans", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers", "You pop up as a spring on the earth’s surface and make the ground wet. Go to the Ground");
+    var myarray= new Array("You remain in the aquifer. STAY where you are!",
+                           "You remain in the aquifer. STAY where you are!",
+                           "You remain in the aquifer. STAY where you are!",
+                           "After a long time you seep into the ocean. Go to the Oceans",
+                           "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers",
+                           "You pop up as a spring on the earth’s surface and make the ground wet. Go to the Ground");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationEight()
 {
-    var myarray= new Array("Go to Magma", "Go to Magma", "Go to Magma", "Continue Melting at this station", "Continue Melting at this station", "Continue Melting at this station");
+        var myarray= new Array("",
+                           "",
+                           "",
+                           "",
+                           "",
+                           "");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationNine()
 {
-    var myarray= new Array("Go to Igneous Rock", "Go to Igneous Rock", "Go to Igneous Rock", "Continue Cooling and Hardening at this station", "Continue Cooling and Hardening at this station", "Continue Cooling and Hardening at this station");
+        var myarray= new Array("",
+                           "",
+                           "",
+                           "",
+                           "",
+                           "");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
