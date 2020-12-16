@@ -18,7 +18,12 @@
 <script>
 function StationOne()
 {
-    var myarray= new Array("Go to Sedimentary Rock", "Go to Sedimentary Rock", "Go to Sedimentary Rock", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station", "Keep Compacting and Cementing at this station");
+    var myarray= new Array("You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY where you are!",
+                           "You float in the atmosphere as a gas (water vapor) while carried along by the wind. STAY where you are!",
+                           "An updraft carries you higher into the atmosphere where you become cooler and CONDENSE into a cloud. Go to the Clouds",
+                           "The air around you cools and you CONDENSE into a cloud. Go to the Clouds",
+                           "Clear skies and a cool night caused you to change from a gas (water vapor) to a liquid (water) and you appear as dew on grass. Go to the Ground",
+                           "Clear skies and a cold night caused you to change from a gas (water vapor) to a solid (ice crystal) and you appear as frost on grass. The process is called DEPOSITION. Go to the Ground");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
@@ -54,7 +59,7 @@ function StationSix()
 }
 function StationSeven()
 {
-    var myarray= new Array("You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "After a long time you seep into the ocean. Go to the Oceans", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers");
+    var myarray= new Array("You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "After a long time you seep into the ocean. Go to the Oceans", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers", "You pop up as a spring on the earth’s surface and make the ground wet. Go to the Ground");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
