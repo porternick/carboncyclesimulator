@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Rock Cycle Simulator</title>
+  <title>Water Cycle Simulator</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -70,19 +70,7 @@ function StationNine()
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
-function StationTen()
-{
-    var myarray= new Array("Go to Cooling and Hardening", "Go to Cooling and Hardening", "Continue as Magma at this station", "Continue as Magma at this station", "Continue as Magma at this station", "Continue as Magma at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationEleven()
-{
-    var myarray= new Array("Go to Sediment", "Go to Sediment", "Go to Sediment", "Continue Weathering and Eroding at this station", "Continue Weathering and Eroding at this station", "Continue Weathering and Eroding at this station");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-  
+
 </script>
 
 <body>
@@ -103,17 +91,15 @@ function StationEleven()
 
         <h2 class="alert alert-info border border-info rounded-15" id="s1"></h2>
         <br>
-        <p><input type="button" id="btnSymbol" value="Station 1 Compaction and Cementation" onclick="StationOne();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 2 High Temperature and Pressure" onclick="StationTwo();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 3 Sediment" onclick="StationThree();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 4 Igneous Rock" onclick="StationFour();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 5 Exposure at the Surface" onclick="StationFive();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 6 Metamorphic Rock" onclick="StationSix();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 7 Sedimentary Rock" onclick="StationSeven();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 8 Melting" onclick="StationEight();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 9 Cooling and Hardening" onclick="StationNine();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 10 Magma" onclick="StationTen();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 11 Weathering and Erosion" onclick="StationEleven();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 1 Atmosphere" onclick="StationOne();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 2 Clouds" onclick="StationTwo();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 3 Snow" onclick="StationThree();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 4 Glaciers" onclick="StationFour();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 5 Rivers & Lakes" onclick="StationFive();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 6 Oceans" onclick="StationSix();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 7 Aquifer" onclick="StationSeven();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 8 Ground" onclick="StationEight();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 9 Plants" onclick="StationNine();" /></p>
         </div>
     </div>
   </div>
