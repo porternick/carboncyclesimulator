@@ -54,7 +54,7 @@ function StationSix()
 }
 function StationSeven()
 {
-    var myarray= new Array("Go to High Temperature and Pressure", "Go to High Temperature and Pressure", "Go to Melting", "Go to Melting", "Go to Weathering and Erosion", "Go to Weathering and Erosion");
+    var myarray= new Array("You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "You remain in the aquifer. STAY where you are!", "After a long time you seep into the ocean. Go to the Oceans", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers", "You pop up as an underground spring and supply water to a lake. Go to the Lakes & Rivers");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
@@ -86,20 +86,20 @@ function StationNine()
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Rock Cycle Simulator</h1>
+        <h1 class="mt-5">Water Cycle Simulator</h1>
         <p class="lead">Choose a station to start at and click the station button.</br>Follow the instructions to go to another station OR continue at the current station.</br>Write down in your Google Doc which station number you stay at or go to for every click.</br>You will be using this information to make a chart of your travels through the rock cycle.</p>
 
         <h2 class="alert alert-info border border-info rounded-15" id="s1"></h2>
         <br>
-        <p><input type="button" id="btnSymbol" value="Station 1 Atmosphere" onclick="StationOne();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 2 Clouds" onclick="StationTwo();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 3 Snow" onclick="StationThree();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 4 Glaciers" onclick="StationFour();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 5 Rivers & Lakes" onclick="StationFive();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 6 Oceans" onclick="StationSix();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 7 Aquifer" onclick="StationSeven();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 8 Ground" onclick="StationEight();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 9 Plants" onclick="StationNine();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 1 - Atmosphere" onclick="StationOne();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 2 - Clouds" onclick="StationTwo();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 3 - Snow" onclick="StationThree();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 4 - Glaciers" onclick="StationFour();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 5 - Rivers & Lakes" onclick="StationFive();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 6 - Oceans" onclick="StationSix();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 7 - Aquifer" onclick="StationSeven();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 8 - Ground" onclick="StationEight();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 9 - Plants" onclick="StationNine();" /></p>
         </div>
     </div>
   </div>
