@@ -62,23 +62,23 @@ function StationFour()
 }
 function StationFive()
 {
-        var myarray= new Array("",
-                           "",
-                           "",
-                           "",
-                           "",
-                           "");
+        var myarray= new Array("A dry air mass combined with heating from the sun causes EVAPORATION.<br>Go to Station 1 - Atmosphere.",
+                           "You flow into the ocean.<br>Go to Station 6 - Ocean.",
+                           "You flow into the ocean.<br>Go to Station 6 - Ocean.",
+                           "You percolate into the groundwater (aquifer).<br>Go to Station 7 - Aquifer.",
+                           "You INFILTRATE into the ground.<br>Go to Station 8 - Ground.",
+                           "You continue to flow from lakes to rivers.<br>STAY at Station 5 - Rivers & Lakes!");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationSix()
 {
-        var myarray= new Array("",
-                           "",
-                           "",
-                           "",
-                           "",
-                           "");
+        var myarray= new Array("You float in the ocean.<br>STAY at Station 6 - Oceans!",
+                           "You float in the ocean.<br>STAY at Station 6 - Oceans!",
+                           "You float in the ocean.<br>STAY at Station 6 - Oceans!",
+                           "You float in the ocean.<br>STAY at Station 6 - Oceans!",
+                           "With heating from the sun you change from a liquid (water) to a gas (water vapor) by the process of EVAPORATION.<br>Go to Station 1 - Atmosphere.",
+                           "With heating from the sun you change from a liquid (water) to a gas (water vapor) by the process of EVAPORATION.<br>Go to Station 1 - Atmosphere.");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
@@ -87,20 +87,20 @@ function StationSeven()
     var myarray= new Array("You remain in the aquifer.<br>STAY at Station 7 - Aquifer!",
                            "You remain in the aquifer.<br>STAY  at Station 7 - Aquifer!",
                            "You remain in the aquifer.<br>STAY  at Station 7 - Aquifer!",
-                           "After a long time you seep into the ocean. Go to Station 6 - Oceans",
-                           "You pop up as an underground spring and supply water to a lake. Go to Station 5 - Lakes & Rivers",
-                           "You pop up as a spring on the earth’s surface and make the ground wet. Go to Station 8 - Ground");
+                           "After a long time you seep into the ocean.<br>Go to Station 6 - Oceans",
+                           "You pop up as an underground spring and supply water to a lake.<br>Go to Station 5 - Lakes & Rivers",
+                           "You pop up as a spring on the earth’s surface and make the ground wet.<br>Go to Station 8 - Ground");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationEight()
 {
-        var myarray= new Array("",
-                           "",
-                           "",
-                           "",
-                           "",
-                           "");
+        var myarray= new Array("You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
+                           "You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
+                           "You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
+                           "You are absorbed into the root of a blade of grass.<br>Go to Station 9 - Plants.",
+                           "You are absorbed into the root of a tree.<br>Go to Station 9 - Plants.",
+                           "You PERCOLATE deep into the earth.<br>Go to Station 7 - Aquifers.");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
