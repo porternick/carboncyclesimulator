@@ -23,7 +23,7 @@ var myarray= new Array("Station 1 - Atmosphere:<br>You STAY in the ATMOSPHERE (S
                        "Station 1 - Atmosphere:<br>You are used by phytoplankton in the ocean. Go to OCEANS (Station 6).",
                        "Station 1 - Atmosphere:<br>You STAY in the ATMOSPHERE (Station 1) to circulate and trap the sun’s heat. ",
                        "Station 1 - Atmosphere:<br>You are dissolved in the Carribean Sea. Go to OCEANS (Station 6).",
-                       "Station 1 - Atmosphere:<br>You are used by a Tree for photosynthesis. Go to PLANT.");
+                       "Station 1 - Atmosphere:<br>You are used by a Tree for photosynthesis. Go to PLANTS (Station 2).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
@@ -33,7 +33,7 @@ function StationTwo()
                            "Station 2 - Plants:<br>You are in the leaf of a tree that shed  it’s leaves in the Fall. Go to SOIL/ROCK (Station 4).",
                            "Station 2 - Plants:<br>You are in the heart wood of living tree’s trunk. STAY at PLANTS (Station 2).",
                            "Station 2 - Plants:<br>You are a carbon molecule in a yummy blueberry that was eaten by a hungry bear. Go to ANIMALS (Station 3).",
-                           "Station 2 - Plants:<br>You are stored as cellulose in the new needles of a pine tree. STAY at PLANTS (Station 3).",
+                           "Station 2 - Plants:<br>You are stored as cellulose in the new needles of a pine tree. STAY at PLANTS (Station 2).",
                            "Station 2 - Plants:<br>You are stored as cellulose in a fern that died and become buried deep in sediments before it could decompose.  You are turning into part of a rock.  Go to SOIL/ROCK (Station 4).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
@@ -65,7 +65,7 @@ function StationFive()
     var myarray= new Array("Station 5 - Fossil Fuels:<br>You are converted into gasoline for an automobile and released as CO2 during the combustion process.  Go to ATMOSPHERE (Station 1).",
                            "Station 5 - Fossil Fuels:<br>You are being burned in a coal power plant and are released as CO2. Go to ATMOSPHERE (Station 1).",
                            "Station 5 - Fossil Fuels:<br>You are mined for coal and breathed in by a coal miner. Go to ANIMALS (Station 3).",
-                           "Station 5 - Fossil Fuels:<br>You are burned in a coal plant and combine with water vapor to make acid rain. You run off into the OCEAN.  Go to OCEANS (Station 3).",
+                           "Station 5 - Fossil Fuels:<br>You are burned in a coal plant and combine with water vapor to make acid rain. You run off into the OCEAN.  Go to OCEANS (Station 6).",
                            "Station 5 - Fossil Fuels:<br>You are natural gas that has not yet been tapped and pumped above the ground. STAY at FOSSIL FUELS (Station 5).",
                            "Station 5 - Fossil Fuels:<br>You are converted to petroleum and shipped through a long pipeline to a refinery, where you are released as carbon dioxide. Go to ATMOSPHERE (Station 1).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
@@ -78,7 +78,7 @@ function StationSix()
                            "Station 6 - Ocean:<br>You are mined for coal and breathed in by a coal miner. Go to ANIMALS (Station 3).",
                            "Station 6 - Ocean:<br>You are burned in a coal plant and combine with water vapor to make acid rain.  You run off into the ocean. Go to OCEANS (Station 6).",
                            "Station 6 - Ocean:<br>You are natural gas that has not yet been tapped and pumped above the ground.  STAY at FOSSIL FUELS (Station 5).",
-                           "Station 6 - Ocean:<br>You are converted to petroleum and shipped through a long pipeline to a refinery, where you are released as carbon dioxide.  (CO2)  Go to ATMOSPHERE (Station 1).");
+                           "Station 6 - Ocean:<br>You are converted to petroleum and shipped through a long pipeline to a refinery, where you are released as carbon dioxide. Go to ATMOSPHERE (Station 1).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
