@@ -18,67 +18,67 @@
 <script>
 function StationOne()
 {
-var myarray= new Array("Station 1 - Atmosphere:<br>STAY in the atmosphere to circulate and trap the sun’s heat.",
-                       "Station 1 - Atmosphere:<br>Are used by a plant for photosynthesis. Go to PLANT",
-                       "Station 1 - Atmosphere:<br>Are used by phytoplankton in the ocean. Go to OCEAN",
-                       "Station 1 - Atmosphere:<br>STAY in the atmosphere to circulate and trap the sun’s heat. ",
-                       "Station 1 - Atmosphere:<br>Are dissolved in the Carribean Sea. Go to OCEAN. ",
-                       "Station 1 - Atmosphere:<br>Are used by a Spruce Tree for photosynthesis. Go to PLANT.");
+var myarray= new Array("Station 1 - Atmosphere:<br>You STAY in the ATMOSPHERE (Station 1) to circulate and trap the sun’s heat.",
+                       "Station 1 - Atmosphere:<br>You are used by a plant for photosynthesis. Go to PLANTS (Station 2).",
+                       "Station 1 - Atmosphere:<br>You are used by phytoplankton in the ocean. Go to OCEANS (Station 6).",
+                       "Station 1 - Atmosphere:<br>You STAY in the ATMOSPHERE (Station 1) to circulate and trap the sun’s heat. ",
+                       "Station 1 - Atmosphere:<br>You are dissolved in the Carribean Sea. Go to OCEANS (Station 6).",
+                       "Station 1 - Atmosphere:<br>You are used by a Tree for photosynthesis. Go to PLANT.");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationTwo()
 {
-    var myarray= new Array("Station 2 - :<br>",
-                           "Station 2 - :<br>",
-                           "Station 2 - :<br>",
-                           "Station 2 - :<br>",
-                           "Station 2 - :<br>",
-                           "Station 2 - :<br>");
+    var myarray= new Array("Station 2 - Plants:<br>You are stored as cellulose in the cambium of a tree used to build a campfire, and are released during combustion. Go to ATMOSPHERE (Station 1).",
+                           "Station 2 - Plants:<br>You are in the leaf of a tree that shed  it’s leaves in the Fall. Go to SOIL/ROCK (Station 4).",
+                           "Station 2 - Plants:<br>You are in the heart wood of living tree’s trunk. STAY at PLANTS (Station 2).",
+                           "Station 2 - Plants:<br>You are a carbon molecule in a yummy blueberry that was eaten by a hungry bear. Go to ANIMALS (Station 3).",
+                           "Station 2 - Plants:<br>You are stored as cellulose in the new needles of a pine tree. STAY at PLANTS (Station 3).",
+                           "Station 2 - Plants:<br>You are stored as cellulose in a fern that died and become buried deep in sediments before it could decompose.  You are turning into part of a rock.  Go to SOIL/ROCK (Station 4).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationThree()
 {
-    var myarray= new Array("Station 3 - :<br>",
-                           "Station 3 - :<br>",
-                           "Station 3 - :<br>",
-                           "Station 3 - :<br>",
-                           "Station 3 - :<br>",
-                           "Station 3 - :<br>");
+    var myarray= new Array("Station 3 - Animals:<br>You are part of a bear, which burps and exhales you into the air as C02. Go to ATMOSPHERE (Station 1).",
+                           "Station 3 - Animals:<br>You were exhaled from an animal’s lungs into the air as CO2. Go to ATMOSPHERE (Station 1).",
+                           "Station 3 - Animals:<br>You were part of a forest animal that died and is slowly decomposing. Go to SOIL/ROCK (Station 4).",
+                           "Station 3 - Animals:<br>You are stored in the fat of an animal. STAY at ANIMALS (Station 3).",
+                           "Station 3 - Animals:<br>You were part of an insect that died and fell to the ground where it will decompose.  Go to SOIL/ROCK (Station 4).",
+                           "Station 3 - Animals:<br>You are part of a cow that releases excess gas and releases you as methane gas. Go to ATMOSPHERE (Station 1).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFour()
 {
-     var myarray= new Array("Station 4 - :<br>",
-                            "Station 4 - :<br>",
-                            "Station 4 - :<br>",
-                            "Station 4 - :<br>",
-                            "Station 4 - :<br>",
-                            "Station 4 - :<br>");
+     var myarray= new Array("Station 4 - Soil/Rock:You are charred in a ground forest fire and are now almost impossible to decompose. STAY at SOIL/ROCK (Station 4).<br>",
+                            "Station 4 - Soil/Rock:<br>You are trapped in bog sediments and eventually become natural gas. Go to FOSSIL FUELS (Station 5).",
+                            "Station 4 - Soil/Rock:<br>You are buried in rock, changing into natural gas. Go to FOSSIL FUELS (Station 5).",
+                            "Station 4 - Soil/Rock:<br>You are spewed out in a volcanic eruption.  Go to ATMOSPHERE (Station 1).",
+                            "Station 4 - Soil/Rock:<br>You are part of a limestone rock that gets mined for cement and then are released as CO2.  Go to ATMOSPHERE (Station 1).",
+                            "Station 4 - Soil/Rock:<br>You are part of permafrost that is melting.  You are released as a methane gas.  Go to ATMOSPHERE (Station 1).");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFive()
 {
-    var myarray= new Array("Station 5 - :<br>",
-                           "Station 5 - :<br>",
-                           "Station 5 - :<br>",
-                           "Station 5 - :<br>",
-                           "Station 5 - :<br>",
-                           "Station 5 - :<br>");
+    var myarray= new Array("Station 5 - Fossil Fuels:<br>",
+                           "Station 5 - Fossil Fuels:<br>",
+                           "Station 5 - Fossil Fuels:<br>",
+                           "Station 5 - Fossil Fuels:<br>",
+                           "Station 5 - Fossil Fuels:<br>",
+                           "Station 5 - Fossil Fuels:<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationSix()
 {
-    var myarray= new Array("Station 6 - :<br>",
-                           "Station 6 - :<br>",
-                           "Station 6 - :<br>",
-                           "Station 6 - :<br>",
-                           "Station 6 - :<br>",
-                           "Station 6 - :<br>");
+    var myarray= new Array("Station 6 - Ocean:<br>",
+                           "Station 6 - Ocean:<br>",
+                           "Station 6 - Ocean:<br>",
+                           "Station 6 - Ocean:<br>",
+                           "Station 6 - Ocean:<br>",
+                           "Station 6 - Ocean:<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
@@ -103,10 +103,10 @@ function StationSix()
         <h2 class="alert alert-info border border-info rounded-15" id="s1"></h2>
         <br>
         <p><input type="button" id="btnSymbol" value="Station 1 - Atmosphere" onclick="StationOne();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 2 - Clouds" onclick="StationTwo();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 3 - Snow" onclick="StationThree();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 4 - Glaciers" onclick="StationFour();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 5 - Rivers & Lakes" onclick="StationFive();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 2 - Plants" onclick="StationTwo();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 3 - Animals" onclick="StationThree();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 4 - Soil/Rock" onclick="StationFour();" /></p>
+        <p><input type="button" id="btnSymbol" value="Station 5 - Fossil Fuels" onclick="StationFive();" /></p>
         <p><input type="button" id="btnSymbol" value="Station 6 - Oceans" onclick="StationSix();" /></p>
         </div>
     </div>
