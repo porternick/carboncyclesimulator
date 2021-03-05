@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Water Cycle Simulator</title>
+  <title>Carbon Cycle Simulator</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,104 +18,70 @@
 <script>
 function StationOne()
 {
-    var myarray= new Array("Station 1 - Atmosphere:<br>You float in the atmosphere as a gas (water vapor) while carried along by the wind.<br>STAY at Station 1 - Atmosphere.",
-                           "Station 1 - Atmosphere:<br>You float in the atmosphere as a gas (water vapor) while carried along by the wind.<br>STAY at Station 1 - Atmosphere.",
-                           "Station 1 - Atmosphere:<br>An updraft carries you higher into the atmosphere where you become cooler and CONDENSE into a cloud.<br>Go to Station 2 - Clouds",
-                           "Station 1 - Atmosphere:<br>The air around you cools and you CONDENSE into a cloud.<br>Go to Station 2 - Clouds",
-                           "Station 1 - Atmosphere:<br>Clear skies and a cool night caused you to change from a gas (water vapor) to a liquid (water) and you appear as dew on grass.<br>Go to Station 8 - Ground",
-                           "Station 1 - Atmosphere:<br>Clear skies and a cold night caused you to change from a gas (water vapor) to a solid (ice crystal) and you appear as frost on grass. The process is called DEPOSITION.<br>Go to Station 8 - Ground");
+var myarray= new Array("Station 1 - Atmosphere:<br>STAY in the atmosphere to circulate and trap the sun’s heat.",
+                       "Station 1 - Atmosphere:<br>Are used by a plant for photosynthesis. Go to PLANT",
+                       "Station 1 - Atmosphere:<br>Are used by phytoplankton in the ocean. Go to OCEAN",
+                       "Station 1 - Atmosphere:<br>STAY in the atmosphere to circulate and trap the sun’s heat. ",
+                       "Station 1 - Atmosphere:<br>Are dissolved in the Carribean Sea. Go to OCEAN. ",
+                       "Station 1 - Atmosphere:<br>Are used by a Spruce Tree for photosynthesis. Go to PLANT.");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationTwo()
 {
-    var myarray= new Array("Station 2 - Clouds:<br>As a cloud, you are constantly changing shape but otherwise you continue to float in the atmosphere.<br>STAY where you are! Station 2 - Clouds.",
-                           "Station 2 - Clouds:<br>You move into an area where the air is drier. You EVAPORATE as you change from a liquid (water droplet) to a gas (water vapor).<br>Go to Station 1 - Atmosphere.",
-                           "Station 2 - Clouds:<br>CLOUDS You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over the ocean.<br>Go to Station 6 - Oceans.",
-                           "Station 2 - Clouds:<br>You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over land. Too much rain fell so you RUNOFF into a river.<br>Go to Station 5 - Rivers & Lakes.",
-                           "Station 2 - Clouds:<br>You combine with other water droplets to grow larger and larger. You reach a size that cannot be supported by rising air and therefore fall as rain over land and INFILTRATE into the ground.<br>Go to Station 8 - Ground.",
-                           "Station 2 - Clouds:<br>You freeze into an ice crystal and combine with other ice crystals to form a snowflake. As the snowflake grows it becomes too heavy to be supported by the rising air and you fall to the earth.<br>Go to Station3 - Snow.");
+    var myarray= new Array("Station 2 - :<br>",
+                           "Station 2 - :<br>",
+                           "Station 2 - :<br>",
+                           "Station 2 - :<br>",
+                           "Station 2 - :<br>",
+                           "Station 2 - :<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationThree()
 {
-    var myarray= new Array("Station 3 - Snow:<br>You change from a solid (ice crystals) to a gas (water vapor). This process is called SUBLIMATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 3 - Snow:<br>You melt and INFILTRATE into the ground making it wet and muddy.<br>Go to Station 8 - Ground.",
-                           "Station 3 - Snow:<br>You melt and INFILTRATE into the ground making it wet and muddy.<br>Go to Station 8 - Ground.",
-                           "Station 3 - Snow:<br>You melt and RUNOFF into a small stream, then a river and after that a lake.<br>Go to Station 5 - Rivers & Lakes.",
-                           "Station 3 - Snow:<br>You melt and RUNOFF into a small stream, then a river and after that a lake.<br>Go to Station 5 - Rivers & Lakes.",
-                           "Station 3 - Snow:<br>More and more snow falls on you and you get compacted into ice.<br>Go to Station 4 - Glaciers.");
+    var myarray= new Array("Station 3 - :<br>",
+                           "Station 3 - :<br>",
+                           "Station 3 - :<br>",
+                           "Station 3 - :<br>",
+                           "Station 3 - :<br>",
+                           "Station 3 - :<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFour()
 {
-     var myarray= new Array("Station 4 - Glaciers:<br>You INFILTRATE into the ground making it moist.<br>Go to Station 8 - Ground.",
-                            "Station 4 - Glaciers:<br>You break off (calve) from the glacier and become an iceberg in the ocean. You melt.<br>Go to Station 6 - Ocean.",
-                            "Station 4 - Glaciers:<br>You change from a solid (ice) to a gas (water vapor) through the process of SUBLIMATION.<br>Go to Station 1 - Atmosphere.",
-                            "Station 4 - Glaciers:<br>You melt and PERCOLATE into the underground water.<br>Go to Station 7 - Aquifer",
-                            "Station 4 - Glaciers:<br>You remain locked in ice in the glacier.<br>STAY at Station 4 - Glaciers",
-                            "Station 4 - Glaciers:<br>You melt and become RUNOFF.<br>Go to Station 5 - Lakes & Rivers");
+     var myarray= new Array("Station 4 - :<br>",
+                            "Station 4 - :<br>",
+                            "Station 4 - :<br>",
+                            "Station 4 - :<br>",
+                            "Station 4 - :<br>",
+                            "Station 4 - :<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationFive()
 {
-    var myarray= new Array("Station 5 - Rivers & Lakes:<br>A dry air mass combined with heating from the sun causes EVAPORATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 5 - Rivers & Lakes:<br>You flow into the ocean.<br>Go to Station 6 - Ocean.",
-                           "Station 5 - Rivers & Lakes:<br>You flow into the ocean.<br>Go to Station 6 - Ocean.",
-                           "Station 5 - Rivers & Lakes:<br>You percolate into the groundwater (aquifer).<br>Go to Station 7 - Aquifer.",
-                           "Station 5 - Rivers & Lakes:<br>You INFILTRATE into the ground.<br>Go to Station 8 - Ground.",
-                           "Station 5 - Rivers & Lakes:<br>You continue to flow from lakes to rivers.<br>STAY at Station 5 - Rivers & Lakes!");
+    var myarray= new Array("Station 5 - :<br>",
+                           "Station 5 - :<br>",
+                           "Station 5 - :<br>",
+                           "Station 5 - :<br>",
+                           "Station 5 - :<br>",
+                           "Station 5 - :<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
 function StationSix()
 {
-    var myarray= new Array("Station 6 - Oceans:<br>You float in the ocean.<br>STAY at Station 6 - Oceans!",
-                           "Station 6 - Oceans:<br>You float in the ocean.<br>STAY at Station 6 - Oceans!",
-                           "Station 6 - Oceans:<br>You float in the ocean.<br>STAY at Station 6 - Oceans!",
-                           "Station 6 - Oceans:<br>You float in the ocean.<br>STAY at Station 6 - Oceans!",
-                           "Station 6 - Oceans:<br>With heating from the sun you change from a liquid (water) to a gas (water vapor) by the process of EVAPORATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 6 - Oceans:<br>With heating from the sun you change from a liquid (water) to a gas (water vapor) by the process of EVAPORATION.<br>Go to Station 1 - Atmosphere.");
+    var myarray= new Array("Station 6 - :<br>",
+                           "Station 6 - :<br>",
+                           "Station 6 - :<br>",
+                           "Station 6 - :<br>",
+                           "Station 6 - :<br>",
+                           "Station 6 - :<br>");
     var random = myarray[Math.floor(Math.random() * myarray.length)];
    document.getElementById("s1").innerHTML=random;
 }
-function StationSeven()
-{
-    var myarray= new Array("Station 7 - Aquifer:<br>You remain in the aquifer.<br>STAY at Station 7 - Aquifer!",
-                           "Station 7 - Aquifer:<br>You remain in the aquifer.<br>STAY  at Station 7 - Aquifer!",
-                           "Station 7 - Aquifer:<br>You remain in the aquifer.<br>STAY  at Station 7 - Aquifer!",
-                           "Station 7 - Aquifer:<br>After a long time you seep into the ocean.<br>Go to Station 6 - Oceans",
-                           "Station 7 - Aquifer:<br>You pop up as an underground spring and supply water to a lake.<br>Go to Station 5 - Lakes & Rivers",
-                           "Station 7 - Aquifer:<br>You pop up as a spring on the earth’s surface and make the ground wet.<br>Go to Station 8 - Ground");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationEight()
-{
-    var myarray= new Array("Station 8 - Ground:<br>You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 8 - Ground:<br>You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 8 - Ground:<br>You change from a liquid (water) to a gas (water vapor). This process is called EVAPORATION.<br>Go to Station 1 - Atmosphere.",
-                           "Station 8 - Ground:<br>You are absorbed into the root of a blade of grass.<br>Go to Station 9 - Plants.",
-                           "Station 8 - Ground:<br>You are absorbed into the root of a tree.<br>Go to Station 9 - Plants.",
-                           "Station 8 - Ground:<br>You PERCOLATE deep into the earth.<br>Go to Station 7 - Aquifers.");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-function StationNine()
-{
-    var myarray= new Array("Station 9 - Plants:<br>You are used by the plant to move necessary minerals to the parts of the plants that require them and for photosynthesis. You remain in the plant.<br>STAY at Station 9 - Plants!",
-                           "Station 9 - Plants:<br>You move as water from the roots to the leaves of the plant then evaporate into the atmosphere. This process is called TRANSPIRATION.<br>Go to Station 1 - Atmosphere",
-                           "Station 9 - Plants:<br>You move as water from the roots to the leaves of the plant then evaporate into the atmosphere. This process is called TRANSPIRATION.<br>Go to Station 1 - Atmosphere",
-                           "Station 9 - Plants:<br>You move as water from the roots to the leaves of the plant then evaporate into the atmosphere. This process is called TRANSPIRATION.<br>Go to Station 1 - Atmosphere",
-                           "Station 9 - Plants:<br>You move as water from the roots to the leaves of the plant then evaporate into the atmosphere. This process is called TRANSPIRATION.<br>Go to Station 1 - Atmosphere",
-                           "Station 9 - Plants:<br>You move as water from the roots to the leaves of the plant then evaporate into the atmosphere. This process is called TRANSPIRATION.<br>Go to Station 1 - Atmosphere");
-    var random = myarray[Math.floor(Math.random() * myarray.length)];
-   document.getElementById("s1").innerHTML=random;
-}
-
 </script>
 
 <body>
@@ -131,7 +97,7 @@ function StationNine()
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Water Cycle Simulator</h1>
+        <h1 class="mt-5">Carbon Cycle Simulator</h1>
         <p class="lead">Choose a station to start at and click the station button.</br>Follow the instructions to go to another station OR continue at the current station.</br>Write down in your Google Doc which station number you stay at or go to for every click.</br>You will be using this information to make a chart of your travels through the water cycle.</p>
 
         <h2 class="alert alert-info border border-info rounded-15" id="s1"></h2>
@@ -142,9 +108,6 @@ function StationNine()
         <p><input type="button" id="btnSymbol" value="Station 4 - Glaciers" onclick="StationFour();" /></p>
         <p><input type="button" id="btnSymbol" value="Station 5 - Rivers & Lakes" onclick="StationFive();" /></p>
         <p><input type="button" id="btnSymbol" value="Station 6 - Oceans" onclick="StationSix();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 7 - Aquifer" onclick="StationSeven();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 8 - Ground" onclick="StationEight();" /></p>
-        <p><input type="button" id="btnSymbol" value="Station 9 - Plants" onclick="StationNine();" /></p>
         </div>
     </div>
   </div>
